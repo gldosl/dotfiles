@@ -8,7 +8,7 @@ PROMPT='%F{cyan}%n@%M%f %F{240}%1~ %f%# '
 RPROMPT='%F{green}${vcs_info_msg_0_} %F{240}%*%f'
 
 # dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # aliases
 alias ls='ls -G'
@@ -27,7 +27,11 @@ fi
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
