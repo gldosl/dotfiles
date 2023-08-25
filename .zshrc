@@ -18,6 +18,9 @@ alias grep='grep --color'
 # ncdu - directory size
 # fzf - fuzzy file search
 
+# Sublime Text
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
 # if x86, show in prompt
 if [ `arch` = "i386" ];
 then
