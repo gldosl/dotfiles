@@ -15,17 +15,19 @@ alias ls='ls -G'
 alias x86='arch -x86_64 zsh' # Start Shell in Rosetta 2 (M1)
 alias grep='grep --color'
 
-# ncdu - directory size
-# fzf - fuzzy file search
-
-# Sublime Text
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
 # if x86, show in prompt
 if [ `arch` = "i386" ];
 then
     PROMPT=$PROMPT"%F{yellow}[x86] %F{240}%f%"
 fi
+
+# other programs
+# bat - colored cat
+# ncdu - directory size
+# fzf - fuzzy file search
+
+# Sublime Text
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
