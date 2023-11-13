@@ -12,7 +12,7 @@ alias dt='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # aliases
 alias ls='ls -G'
-alias x86='arch -x86_64 zsh' # Start Shell in Rosetta 2 (M1)
+alias x86='arch -x86_64 zsh' # Start Shell in Rosetta 2 (Apple M-series CPUs)
 alias grep='grep --color'
 
 # if x86, show in prompt
@@ -30,7 +30,6 @@ fi
 alias branches="git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
 alias logline="git log --decorate --oneline --graph"
 
-
 # Sublime Text
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
@@ -39,8 +38,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # load nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # nvm bash_completion
 
 # AWS
 export AWS_PROFILE=os-dev
@@ -49,7 +48,7 @@ export AWS_REGION=us-west-2
 # Docker
 export PATH=$PATH:~/.docker/bin
 
-# sdkman
+# sdkman # uncomment for java setup
 # export SDKMAN_DIR="$HOME/.sdkman"
 # [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
