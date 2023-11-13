@@ -26,17 +26,30 @@ fi
 # ncdu - directory size
 # fzf - fuzzy file search
 
+# git 
+alias branches="git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
+alias logline="git log --decorate --oneline --graph"
+
+
 # Sublime Text
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# java
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# AWS
+export AWS_PROFILE=os-dev
+export AWS_REGION=us-west-2
+
+# Docker
+export PATH=$PATH:~/.docker/bin
+
+# sdkman
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
