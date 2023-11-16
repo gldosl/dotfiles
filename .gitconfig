@@ -2,6 +2,6 @@
 	name = Gabriel Dunne
 	email = <redacted-for-privacy>@openspace.ai
 [alias]
-	diff-branches = "!f() { git diff $1:$3 $2:$3; }; f"
-	branches = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
-	logline = log --decorate --oneline --graph
+    diff-branches = "!f() { git diff $1:$3 $2:$3; }; f"
+    branches = for-each-ref --sort=-committerdate refs/heads/ --format='%(color:yellow)%(committerdate:short)%(color:reset) %(refname:short)'
+    logline = log --decorate --oneline --graph

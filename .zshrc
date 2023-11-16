@@ -26,10 +26,6 @@ fi
 # ncdu - directory size
 # fzf - fuzzy file search
 
-# git 
-alias branches="git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
-alias logline="git log --decorate --oneline --graph"
-
 # Sublime Text
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
